@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/practice_react2_formik/static/css/main.f02de316.css",
-    "main.js": "/practice_react2_formik/static/js/main.46f369de.js",
+    "main.css": "/practice_react2_formik/static/css/main.e6c13ad2.css",
+    "main.js": "/practice_react2_formik/static/js/main.a17a31a2.js",
     "index.html": "/practice_react2_formik/index.html",
-    "main.f02de316.css.map": "/practice_react2_formik/static/css/main.f02de316.css.map",
-    "main.46f369de.js.map": "/practice_react2_formik/static/js/main.46f369de.js.map"
+    "main.e6c13ad2.css.map": "/practice_react2_formik/static/css/main.e6c13ad2.css.map",
+    "main.a17a31a2.js.map": "/practice_react2_formik/static/js/main.a17a31a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f02de316.css",
-    "static/js/main.46f369de.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a17a31a2.js"
   ]
 }
