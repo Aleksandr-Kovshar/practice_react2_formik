@@ -40,7 +40,6 @@ const initialValues = {
   wouldRecommend: false,
 };
 
-
 export class ProductReviewForm extends Component {
   handleSubmit = (values, { resetForm }) => {
     console.log(values);
@@ -74,32 +73,53 @@ export class ProductReviewForm extends Component {
             <div>
               <Field name="product" as="select">
                 <option value="">Select a product</option>
-                {products.map((product, idx) => (<option value={product} key={idx}>{product }</option>))}
+                {products.map((product, idx) => (
+                  <option value={product} key={idx}>
+                    {product}
+                  </option>
+                ))}
               </Field>
               <FormError name="product" />
             </div>
           </div>
           <div>
-            <label htmlFor="name">Full name</label>
+            <label htmlFor="title">Title</label>
             <div>
-              <Field name="name" type="text" placeholder="Full name" />
-              <FormError name="name" />
+              <Field name="title" type="text" placeholder="Title" />
+              <FormError name="title" />
             </div>
           </div>
           <div>
-            <label htmlFor="name">Full name</label>
+            <label htmlFor="review">Review</label>
             <div>
-              <Field name="name" type="text" placeholder="Full name" />
-              <FormError name="name" />
+              <Field name="review" as="textarea" placeholder="Review" />
+              <FormError name="review" />
             </div>
           </div>
+          <div>
+            <label htmlFor="rating">Rating</label>
+            <div>
+              <Field name="rating" type="number" placeholder="Rating" />
+              <FormError name="rating" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label htmlFor="wouldRecommend">
+                <Field
+                  name="wouldRecommend"
+                  type="checkbox"
+                  placeholder="Full name"
+                />
+                WouldRecommend
+              </label>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
         </Form>
       </Formik>
     );
-  };
+  }
 }
-
-
-
 
 export default ProductReviewForm;
